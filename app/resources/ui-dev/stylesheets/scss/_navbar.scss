@@ -15,6 +15,11 @@
 // Provide a static navbar from which we expand to create full-width, fixed, and
 // other navbar variations.
 
+.navbar-footer {
+  left: 0;
+  bottom: 0;
+}
+
 .navbar {
   position: relative;
   display: flex;

@@ -40,6 +40,9 @@
 
 .card-title {
   margin-bottom: $card-spacer-y;
+  > a {
+    text-decoration: none; //---custom
+  }
 }
 
 .card-subtitle {
@@ -164,6 +167,7 @@
 }
 
 
+
 //
 // Card groups
 //
@@ -265,6 +269,35 @@
     .card {
       display: inline-block; // Don't let them vertically span multiple columns
       width: 100%; // Don't let their width change
+    }
+  }
+}
+
+
+//---custom
+
+.card-profile {
+  display: flex;
+  flex-direction: column;
+
+  .card {
+    margin-bottom: $card-deck-margin;
+  }
+
+  @include media-breakpoint-up(sm) {
+    flex-flow: row wrap;
+    margin-right: -$card-deck-margin;
+    margin-left: -$card-deck-margin;
+    margin-top: $card-deck-margin; // card-profile
+
+    .card {
+      display: flex;
+      // Flexbugs #4: https://github.com/philipwalton/flexbugs#4-flex-shorthand-declarations-with-unitless-flex-basis-values-are-ignored
+      flex: 1 0 0%;
+      flex-direction: column;
+      margin-right: $card-deck-margin;
+      margin-bottom: 0; // Override the default
+      margin-left: $card-deck-margin;
     }
   }
 }

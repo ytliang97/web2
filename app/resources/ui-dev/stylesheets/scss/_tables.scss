@@ -120,6 +120,15 @@
       border-color: $table-border-color;
     }
   }
+
+  .thead-gray {
+    th {
+      color: $table-gray-color;
+      background-color: $table-gray-bg;
+      border-color: $table-gray-border-color;
+    }
+  }
+
 }
 
 .table-dark {
