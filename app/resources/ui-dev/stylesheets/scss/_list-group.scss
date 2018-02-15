@@ -114,7 +114,7 @@
   @include list-group-item-variant($color, theme-color-level($color, -9), theme-color-level($color, 6));
 }
 
-
+//--- custom
 
 .list-group-dotted {
   .list-group-item {
@@ -148,4 +148,12 @@
   font: bold;
   padding: 6px 10px;
   position: relative;
+}
+
+.list-subMenu {
+  //width: 200px;
+}
+
+.list-url {
+  margin-top: 5px;
 }

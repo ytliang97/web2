@@ -182,6 +182,7 @@
     margin-bottom: $card-group-margin;
   }
 
+
   @include media-breakpoint-up(sm) {
     flex-flow: row wrap;
     // The child selector allows nested `.card` within `.card-group`
@@ -300,4 +301,27 @@
       margin-left: $card-deck-margin;
     }
   }
+}
+
+//===Gallery (not hero image)
+
+div.gallery {
+  margin: 5px;
+  border: 1px solid #ccc;
+  float: left;
+  width: 180px;
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
 }
