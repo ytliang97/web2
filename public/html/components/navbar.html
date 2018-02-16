@@ -23,66 +23,61 @@
 
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
-            <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarNews" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <li class="nav-item">
+                <a class="nav-link" href="#" id="navbarNews">
                     系所公告
                 </a>
-                <div class="dropdown-menu" aria-labelledby="navbarNews">
+                <!--<div class="dropdown-menu" aria-labelledby="navbarNews">
                     <todo-item v-for="item in NewsList" v-bind:todo="item" v-bine:key="item.id"></todo-item>
-                </div>
+                </div>-->
             </li>
-            <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarIntroduce" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <li class="nav-item\">
+                <a class="nav-link" href="#" id="navbarIntroduce">
                     系所簡介
                 </a>
-                <div class="dropdown-menu" aria-labelledby="navbarIntroduce">
+                <!--<div class="dropdown-menu" aria-labelledby="navbarIntroduce">
                     <todo-item v-for="item in IntroduceList" v-bind:todo="item" v-bind:key="item.id"></todo-item>
-                </div>
-            </li>
-            <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarCourse" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    課程資訊
-                </a>
-                <div class="dropdown-menu" aria-labelledby="navbarCourse">
-                    <todo-item v-for="item in CourseList" v-bind:todo="item" v-bind:key="item.id"></todo-item>
-                </div>
-            </li>
-            <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarEnrollment" role="button" data-toggle="dropdown" aria-haspopup="true" aria-labelledby="false">
-                    招生資訊
-                </a>
-                <div class="dropdown-menu" aria-labelledby="navbarEnrollment">
-                    <todo-item v-for="item in EnrollmentList" v-bind:todo="item" v-bind:key="item.id"></todo-item>
-                </div>
-            </li>
-            <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDownload" role="button" data-toggle="dropdown" aria-haspopup="true" aria-labelledby="false">
-                    法令/表單
-                </a>
-                <div class="dropdown-menu" aria-labelledby="navbarDownload">
-                    <todo-item v-for="item in DownloadList" v-bind:todo="item" v-bind:key="item.id"></todo-item>
-                </div>
-            </li>
-            <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarStudent" role="button" data-toggle="dropdown" aria-haspopup="true" aria-labelledby="false">
-                    學生資訊
-                </a>
-                <div class="dropdown-menu" aria-labelledby="navbarStudent">
-                    <todo-item v-for="item in StudentList" v-bind:todo="item" b-bind:key="item.id"></todo-item>
-                </div>
-            </li>
-            <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarResource" role="button" data-toggle="dropdown" aria-haspopup="true" aria-labelledby="false">
-                    網路資源
-                </a>
-                <div class="dropdown-menu" aria-labelledby="navbarResource">
-                    <todo-item v-for="item in ResourceList" v-bind:todo="item" v-bind:key="item.id"></todo-item>
-                </div>
+                </div>-->
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">
-                    活動相簿
+                <a class="nav-link" href="#" id="navbarCourse">
+                    課程資訊
                 </a>
+                <!--<div class="dropdown-menu" aria-labelledby="navbarCourse">
+                    <todo-item v-for="item in CourseList" v-bind:todo="item" v-bind:key="item.id"></todo-item>
+                </div>-->
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#" id="navbarEnrollment">
+                    招生資訊
+                </a>
+                <!--<div class="dropdown-menu" aria-labelledby="navbarEnrollment">
+                    <todo-item v-for="item in EnrollmentList" v-bind:todo="item" v-bind:key="item.id"></todo-item>
+                </div>-->
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#" id="navbarDownload">
+                    法令/表單
+                </a>
+                <!--<div class="dropdown-menu" aria-labelledby="navbarDownload">
+                    <todo-item v-for="item in DownloadList" v-bind:todo="item" v-bind:key="item.id"></todo-item>
+                </div>-->
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#" id="navbarStudent">
+                    學生資訊
+                </a>
+                <!--<div class="dropdown-menu" aria-labelledby="navbarStudent">
+                    <todo-item v-for="item in StudentList" v-bind:todo="item" b-bind:key="item.id"></todo-item>
+                </div>-->
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#" id="navbarResource">
+                    網路資源
+                </a>
+                <!--<div class="dropdown-menu" aria-labelledby="navbarResource">
+                    <todo-item v-for="item in ResourceList" v-bind:todo="item" v-bind:key="item.id"></todo-item>
+                </div>-->
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="#">
@@ -156,6 +151,8 @@
 <!-- /.Navbar -->
 
 <div class="container">
+
+    <!-- Staff Submenu -->
     <div class="list-subMenu">
         <ul class="list-group-menu">
             <li class="list-group-item list-group-item-dark">MENU</li>
@@ -163,6 +160,8 @@
             <li class="list-group-item"><a href="#">行政人員</a></li>
         </ul>
     </div>
+    <!-- /.Staff Submenu -->
+
 </div>
 
 <div class="container">
@@ -225,6 +224,87 @@
         </ol>
     </nav>
     <!-- /.Labs Nav -->
+
+</div>
+
+<div class="container">
+
+    <!-- Download Link Nav -->
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="#1">獎學金</a></li>
+            <li class="breadcrumb-item"><a href="#2">課程架構</a></li>
+            <li class="breadcrumb-item"><a href="#3">{{ changeMajor }}</a></li>
+            <li class="breadcrumb-item"><a href="#4">{{ bachelorProject }}</a></li>
+            <li class="breadcrumb-item"><a href="#5">{{ masterPaper }}</a></li>
+            <li class="breadcrumb-item"><a href="#6">離校手續</a></li>
+        </ol>
+    </nav>
+    <!-- /.Download Link Nav -->
+
+</div>
+
+<div class="container">
+
+    <!-- Enrollment Submenu -->
+    <div class="list-subMenu">
+        <ul class="list-group-menu">
+            <li class="list-group-item list-group-item-dark">MENU</li>
+            <li class="list-group-item"><a href="#bachelor">學士班</a></li>
+            <li class="list-group-item"><a href="#master">碩士班</a></li>
+            <li class="list-group-item"><a href="#ChinaStudents">中國學生</a></li>
+            <li class="list-group-item"><a href="#exchangeStudents">國際交換生</a></li>
+            <li class="list-group-item"><a href="#commonQuestion">常見問題</a></li>
+        </ul>
+    </div>
+    <!-- /.Enrollment Link Nav -->
+
+</div>
+
+<div class="container">
+
+    <!-- Course Submenu -->
+    <div class="list-subMenu">
+        <ul class="list-group-menu">
+            <li class="list-group-item list-group-item-dark">MENU</li>
+            <li class="list-group-item"><a href="#">學士班</a></li>
+            <li class="list-group-item"><a href="#">碩士班</a></li>
+        </ul>
+    </div>
+    <!-- Course Submenu -->
+
+</div>
+
+<div class="container">
+
+    <!-- Course Link Nav -->
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="#">選課注意事項</a></li>
+            <li class="breadcrumb-item"><a href="#">課程架構</a></li>
+            <li class="breadcrumb-item"><a href="#">畢業條件</a></li>
+            <li class="breadcrumb-item"><a href="#">年度課程內容</a></li>
+            <li class="breadcrumb-item"><a href="#">課程內容概述</a></li>
+        </ol>
+    </nav>
+    <!-- /.Course Link Nav -->
+
+</div>
+
+<div class="container">
+
+    <!-- Student Business Submenu -->
+    <div class="list-subMenu">
+        <ul class="list-group-menu">
+            <li class="list-group-item list-group-item-dark">MENU</li>
+            <li class="list-group-item"><a href="#">學生論文</a></li>
+            <li class="list-group-item"><a href="#">系學會</a></li>
+            <li class="list-group-item"><a href="#">獎助學金</a></li>
+            <li class="list-group-item"><a href="#">證照成果</a></li>
+            <li class="list-group-item"><a href="#">系友專區</a></li>
+        </ul>
+    </div>
+    <!-- Student Business Submenu -->
 
 </div>
 
