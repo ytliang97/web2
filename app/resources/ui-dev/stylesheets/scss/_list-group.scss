@@ -124,11 +124,15 @@
 
     @include border-radius(0);
     > p {
-      border-left: solid 5px;
+      border-left: solid 5px $light-calm;
       padding-left: 12px;
       margin: 0;
       > a {
         text-decoration: none;
+        color: $deep-calm;
+      }
+      > a:hover {
+        color: $calm;
       }
     }
   }
@@ -148,13 +152,14 @@
   font: bold;
   padding: 6px 10px;
   position: relative;
+  background-color: $light-calm;
 }
 
 .list-subMenu {
   //width: 200px;
 }
 
-.list-url {
+.list-margin {
   margin-top: 5px;
 }
 
@@ -170,4 +175,58 @@
       border-top: 0;
     }
   }
+}
+
+.shadow {
+  -moz-box-shadow:     5px 6px #ccc;
+  -webkit-box-shadow:  5px 6px #ccc;
+  box-shadow:          5px 6px #ccc;
+  -webkit-padding-start: 0px;
+}
+
+.list-group-date {
+  .list-group-item {
+    border-right: 0;
+    border-left: 0;
+    border-style: dotted;
+
+    @include border-radius(0);
+    > p {
+      border-left: solid 5px $light-calm;
+      padding-left: 12px;
+      margin: 0;
+      > a {
+        text-decoration: none;
+        color: $deep-calm;
+      }
+      > a:hover {
+        color: $calm;
+      }
+    }
+    > .list-group-date-block {
+        width: 58px;
+        float:left;
+        margin-left: 10px;
+        padding-bottom: 5px;
+    }
+    > .date-block-color {
+        background-color: $light-calm-100;
+        color: $deep-calm;
+        font-size: 12pt;
+    }
+    > .list-groupt-date-block span {
+      display: block;
+      font-size: 24px;
+      line-height: 24px;
+      padding: 8px 0 2px 0;
+      zoom: 1;
+    }
+  }
+
+  &:first-child {
+    .list-group-item:first-child {
+      border-top: 0px;
+    }
+  }
+
 }

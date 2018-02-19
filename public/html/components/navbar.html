@@ -15,215 +15,445 @@
 
 <!-- Navbar -->
 
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <a class="navbar-brand" href="#">NTCU CSIE</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-    </button>
+<!-- Big Brand -->
+<div class="jumbotron-brand jumbotron-fluid">
 
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav mr-auto">
-            <li class="nav-item">
-                <a class="nav-link" href="#" id="navbarNews">
-                    系所公告
-                </a>
-                <!--<div class="dropdown-menu" aria-labelledby="navbarNews">
-                    <todo-item v-for="item in NewsList" v-bind:todo="item" v-bine:key="item.id"></todo-item>
-                </div>-->
-            </li>
-            <li class="nav-item\">
-                <a class="nav-link" href="#" id="navbarIntroduce">
-                    系所簡介
-                </a>
-                <!--<div class="dropdown-menu" aria-labelledby="navbarIntroduce">
-                    <todo-item v-for="item in IntroduceList" v-bind:todo="item" v-bind:key="item.id"></todo-item>
-                </div>-->
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#" id="navbarCourse">
-                    課程資訊
-                </a>
-                <!--<div class="dropdown-menu" aria-labelledby="navbarCourse">
-                    <todo-item v-for="item in CourseList" v-bind:todo="item" v-bind:key="item.id"></todo-item>
-                </div>-->
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#" id="navbarEnrollment">
-                    招生資訊
-                </a>
-                <!--<div class="dropdown-menu" aria-labelledby="navbarEnrollment">
-                    <todo-item v-for="item in EnrollmentList" v-bind:todo="item" v-bind:key="item.id"></todo-item>
-                </div>-->
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#" id="navbarDownload">
-                    法令/表單
-                </a>
-                <!--<div class="dropdown-menu" aria-labelledby="navbarDownload">
-                    <todo-item v-for="item in DownloadList" v-bind:todo="item" v-bind:key="item.id"></todo-item>
-                </div>-->
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#" id="navbarStudent">
-                    學生資訊
-                </a>
-                <!--<div class="dropdown-menu" aria-labelledby="navbarStudent">
-                    <todo-item v-for="item in StudentList" v-bind:todo="item" b-bind:key="item.id"></todo-item>
-                </div>-->
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#" id="navbarResource">
-                    網路資源
-                </a>
-                <!--<div class="dropdown-menu" aria-labelledby="navbarResource">
-                    <todo-item v-for="item in ResourceList" v-bind:todo="item" v-bind:key="item.id"></todo-item>
-                </div>-->
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">
-                    IEET
-                </a>
-            </li>
-        </ul>
-        <form class="form-inline my-2 my-lg-0">
-            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-        </form>
-    </div><!--.collapse navbar-collapse-->
-    <script>
-        Vue.component('todo-item', {
-            props: ['todo'],
-            template: '<a class="dropdown-item" href="#">{{ todo.navTitle }}</a>'
-        })
-        new Vue({
-            el: '#navbarSupportedContent',
-            data: {
-                NewsList: [
-                    { id: 0, navTitle: '活動與演講'},
-                    { id: 0, navTitle: '徵才訊息'},
-                    { id: 0, navTitle: '招生訊息'},
-                    { id: 0, navTitle: '獎學金訊息'},
-                    { id: 0, navTitle: '其他訊息'}
-                ],
-                IntroduceList: [
-                    { id: 0, navTitle: '系所歷史' },
-                    { id: 0, navTitle: '成員介紹' },
-                    { id: 0, navTitle: '榮譽獎項' },
-                    { id: 0, navTitle: '實驗室' },
-                    { id: 0, navTitle: '未來發展' },
-                    { id: 0, navTitle: '系所位置' }
-                ],
-                CourseList: [
-                    { id: 0, navTitle: '學士班課程架構' },
-                    { id: 0, navTitle: '碩士班課程架構' }
-                ],
-                EnrollmentList: [
-                    { id: 0, navTitle: '學士班' },
-                    { id: 0, navTitle: '碩士班' },
-                    { id: 0, navTitle: '中國學生' },
-                    { id: 0, navTitle: '國際交換生' },
-                    { id: 0, navTitle: '常見問題' }
-                ],
-                DownloadList: [
-                    { id: 0, navTitle: '作業程序' },
-                    { id: 0, navTitle: '教師專用' },
-                    { id: 0, navTitle: '學生相關' },
-                    { id: 0, navTitle: '其他表單' }
-                ],
-                StudentList: [
-                    { id: 0, navTitle: '學生論文' },
-                    { id: 0, navTitle: '系學會' },
-                    { id: 0, navTitle: '獎助學金' },
-                    { id: 0, navTitle: '證照成果' },
-                    { id: 0, navTitle: '系友專區' }
-                ],
-                ResourceList: [
-                    { id: 0, navTitle: '校內資源' },
-                    { id: 0, navTitle: '校外資源' },
-                    { id: 0, navTitle: '相關組織' },
-                    { id: 0, navTitle: '學術網路' },
-                    { id: 0, navTitle: '其他資源' }
-                ]
-            }
-        })
-    </script>
-</nav>
+    <!-- top nav -->
+    <div class="float-right">
+        <a href="#">回首頁 </a>|
+        <a href="#">交通資訊 </a>|
+        <a href="#">本系位置圖 </a>|
+        <a href="#">聯絡我們 </a>|
+        <a href="#">English&nbsp</a>
+    </div>
+    <!-- /. top nav -->
+
+    <div class="container">
+        <h1 class="text-hide" style="background-image: url('https://assets.burberry.com/is/image/Burberryltd/5ccadf824b117105b0fdc6436eeee73be375fb22.jpg'); width: 50px; height: 50px;">logo</h1>
+        <h1>國立臺中教育大學 資訊工程學系</h1>
+        <p class="lead">誠摯歡迎你加入溫暖的大家庭</p>
+    </div>
+    <!-- underside Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">NTCU CSIE</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#" id="navbarNews">
+                        系所公告
+                    </a>
+                    <!--<div class="dropdown-menu" aria-labelledby="navbarNews">
+                        <todo-item v-for="item in NewsList" v-bind:todo="item" v-bine:key="item.id"></todo-item>
+                    </div>-->
+                </li>
+                <li class="nav-item\">
+                    <a class="nav-link" href="#" id="navbarIntroduce">
+                        系所簡介
+                    </a>
+                    <!--<div class="dropdown-menu" aria-labelledby="navbarIntroduce">
+                        <todo-item v-for="item in IntroduceList" v-bind:todo="item" v-bind:key="item.id"></todo-item>
+                    </div>-->
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#" id="navbarCourse">
+                        課程資訊
+                    </a>
+                    <!--<div class="dropdown-menu" aria-labelledby="navbarCourse">
+                        <todo-item v-for="item in CourseList" v-bind:todo="item" v-bind:key="item.id"></todo-item>
+                    </div>-->
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#" id="navbarEnrollment">
+                        招生資訊
+                    </a>
+                    <!--<div class="dropdown-menu" aria-labelledby="navbarEnrollment">
+                        <todo-item v-for="item in EnrollmentList" v-bind:todo="item" v-bind:key="item.id"></todo-item>
+                    </div>-->
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#" id="navbarDownload">
+                        法令/表單
+                    </a>
+                    <!--<div class="dropdown-menu" aria-labelledby="navbarDownload">
+                        <todo-item v-for="item in DownloadList" v-bind:todo="item" v-bind:key="item.id"></todo-item>
+                    </div>-->
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#" id="navbarStudent">
+                        學生資訊
+                    </a>
+                    <!--<div class="dropdown-menu" aria-labelledby="navbarStudent">
+                        <todo-item v-for="item in StudentList" v-bind:todo="item" b-bind:key="item.id"></todo-item>
+                    </div>-->
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#" id="navbarResource">
+                        網路資源
+                    </a>
+                    <!--<div class="dropdown-menu" aria-labelledby="navbarResource">
+                        <todo-item v-for="item in ResourceList" v-bind:todo="item" v-bind:key="item.id"></todo-item>
+                    </div>-->
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">
+                        IEET
+                    </a>
+                </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-calm my-2 my-sm-0" type="submit"><i class="fa fa-search"></i></button>
+            </form>
+        </div><!--.collapse navbar-collapse-->
+        <script>
+            Vue.component('todo-item', {
+                props: ['todo'],
+                template: '<a class="dropdown-item" href="#">{{ todo.navTitle }}</a>'
+            })
+            new Vue({
+                el: '#navbarSupportedContent',
+                data: {
+                    NewsList: [
+                        { id: 0, navTitle: '活動與演講'},
+                        { id: 0, navTitle: '徵才訊息'},
+                        { id: 0, navTitle: '招生訊息'},
+                        { id: 0, navTitle: '獎學金訊息'},
+                        { id: 0, navTitle: '其他訊息'}
+                    ],
+                    IntroduceList: [
+                        { id: 0, navTitle: '系所歷史' },
+                        { id: 0, navTitle: '成員介紹' },
+                        { id: 0, navTitle: '榮譽獎項' },
+                        { id: 0, navTitle: '實驗室' },
+                        { id: 0, navTitle: '未來發展' },
+                        { id: 0, navTitle: '系所位置' }
+                    ],
+                    CourseList: [
+                        { id: 0, navTitle: '學士班課程架構' },
+                        { id: 0, navTitle: '碩士班課程架構' }
+                    ],
+                    EnrollmentList: [
+                        { id: 0, navTitle: '學士班' },
+                        { id: 0, navTitle: '碩士班' },
+                        { id: 0, navTitle: '中國學生' },
+                        { id: 0, navTitle: '國際交換生' },
+                        { id: 0, navTitle: '常見問題' }
+                    ],
+                    DownloadList: [
+                        { id: 0, navTitle: '作業程序' },
+                        { id: 0, navTitle: '教師專用' },
+                        { id: 0, navTitle: '學生相關' },
+                        { id: 0, navTitle: '其他表單' }
+                    ],
+                    StudentList: [
+                        { id: 0, navTitle: '學生論文' },
+                        { id: 0, navTitle: '系學會' },
+                        { id: 0, navTitle: '獎助學金' },
+                        { id: 0, navTitle: '證照成果' },
+                        { id: 0, navTitle: '系友專區' }
+                    ],
+                    ResourceList: [
+                        { id: 0, navTitle: '校內資源' },
+                        { id: 0, navTitle: '校外資源' },
+                        { id: 0, navTitle: '相關組織' },
+                        { id: 0, navTitle: '學術網路' },
+                        { id: 0, navTitle: '其他資源' }
+                    ]
+                }
+            })
+        </script>
+    </nav>
+    <!-- underside Navbar -->
+</div>
+<!-- /.Big Brand -->
+
 <!-- /.Navbar -->
+
+
+
 
 <div class="container">
 
-    <!-- Staff Submenu -->
-    <div class="list-subMenu">
-        <ul class="list-group-menu">
-            <li class="list-group-item list-group-item-dark">MENU</li>
-            <li class="list-group-item"><a href="#">教師</a></li>
-            <li class="list-group-item"><a href="#">行政人員</a></li>
+    <!-- Staff Submenu::issue -->
+    <div>
+        <ul class="list-group shadow">
+            <li class="list-group-item list-group-item-calm nav-item">subPage Name</li>
+            <li class="list-group-item nav-item">
+                <a class="nav-link active" data-toggle="tab" href="#stud" role="tab">學生</a>
+            </li>
+            <li class="list-group-item nav-item">
+                <a class="nav-link" data-togle="tab" href="#teac" role="tab">教師</a>
+            </li>
         </ul>
+
+        <!-- Switch Content -->
+        <div class="tab-content">
+            <div class="tab-pane active" id="stud1" role="tabpanel">學生</div>
+            <div class="tab-pane" id="teac1" role="tabpanel">教師</div>
+        </div>
+        <!-- /.Switch Content -->
+
     </div>
     <!-- /.Staff Submenu -->
+
 
 </div>
 
 <div class="container">
 
-    <!-- Staff Nav -->
-    <nav aria-label="breadcrumb">
-        <ol class="breadcrumb">
-            <li class="breadcrumb-item"><a href="#">教師</a></li>
-            <li class="breadcrumb-item"><a href="#">行政人員</a></li>
-        </ol>
-    </nav>
-    <!-- /.Staff Nav -->
+    <!-- Test Code -->
+
+    <ul class="list-group shadow">
+        <li class="list-group-item list-group-item-calm">subPage Name</li>
+        <li class="list-group-item nav-item">
+            <a class="nav-link active" data-toggle="tab" href="#homeJo" role="tab">Home</a>
+        </li>
+        <li class="list-group-item nav-item">
+            <a class="nav-link" data-toggle="tab" href="#profileJo" role="tab">Profile</a>
+        </li>
+    </ul>
+
+    <!-- Tab panes -->
+    <div class="tab-content">
+        <div class="tab-pane active" id="homeJo" role="tabpanel">Home</div>
+        <div class="tab-pane" id="profileJo" role="tabpanel">Profile</div>
+    </div>
+
+    <!-- /.Test Code -->
+
+</div>
+
+<div class="container">
+
+    <!-- Download subMenu -->
+    <div>
+
+        <!-- Submenu -->
+        <ul class="list-group shadow">
+            <li class="list-group-item list-group-item-calm">subPage Name</li>
+            <!-- A Link -->
+            <li class="list-group-item nav-item">
+                <a class="nav-link active" data-toggle="tab" href="#stud" role="tab">學生</a>
+            </li>
+            <!-- /.A Link -->
+            <!-- A Link -->
+            <li class="list-group-item nav-item">
+                <a class="nav-link" data-toggle="tab" href="#teac" role="tab">教師</a>
+            </li>
+            <!-- A Link -->
+        </ul>
+        <!-- /.Submenu -->
+
+        <!-- Switch Content -->
+        <div class="tab-content">
+            <!-- A Content -->
+            <div class="tab-pane active" id="stud" role="tabpanel">學生</div>
+            <!-- /.A Content -->
+            <!-- A Content -->
+            <div class="tab-pane" id="teac" role="tabpanel">教師</div>
+            <!-- /.A Content -->
+        </div>
+        <!-- /.Switch Content -->
+
+    </div>
+    <!-- /.Download subMenu -->
+
+</div>
+
+
+
+<div class="container">
+
+    <!-- Staff Nav-Pill -->
+    <!-- Link Name -->
+    <ul class="nav nav-pills mb-3" role="tablist">
+
+        <!-- First Link -->
+        <li class="nav-item">
+            <a class="nav-link active"  data-toggle="pill" href="#staff-1" aria-selected="true">教師</a>
+        </li>
+        <!-- /.First Link -->
+        <!-- Second Link -->
+        <li class="nav-item">
+            <a class="nav-link" data-toggle="pill" href="#staff-2" aria-selected="false">行政人員</a>
+        </li>
+        <!-- /.Second Link -->
+    </ul>
+    <!-- /.Link Name -->
+    <!-- /.Staff Nav-Pill -->
+
+    <!-- Switch Content -->
+    <div class="tab-content">
+        <div class="tab-pane fade show active" id="staff-1">
+            1
+        </div>
+        <div class="tab-pane fade" id="staff-2">
+            2
+        </div>
+    </div>
+    <!-- /.Switch Content -->
 
 </div>
 
 <div class="container">
 
     <!-- News Submenu -->
-    <div class="list-subMenu">
-        <ul class="list-group-menu">
-            <li class="list-group-item list-group-item-dark">MENU</li>
-            <li class="list-group-item"><a href="#">活動與演講</a></li>
-            <li class="list-group-item"><a href="#">徵才訊息</a></li>
-            <li class="list-group-item"><a href="#">招生訊息</a></li>
-            <li class="list-group-item"><a href="#">獎決金訊息</a></li>
-            <li class="list-group-item"><a href="#">其他訊息</a></li>
-        </ul>
-    </div>
+    <!-- Submenu -->
+    <ul class="list-group shadow">
+        <li class="list-group-item list-group-item-calm">{{ ::subPage Name:: }}</li>
+        <!-- A Link -->
+        <li class="list-group-item nav-item">
+            <a class="nav-link active" data-toggle="tab" href="#news-1" role="tab">活動與演講</a>
+        </li>
+        <!-- /.A Link -->
+        <li class="list-group-item nav-item">
+            <a class="nav-link" data-toggle="tab" href="#news-2" role="tab">徵才訊息</a>
+        </li>
+        <li class="list-group-item nav-item">
+            <a class="nav-link" data-toggle="tab" href="#news-3" role="tab">招生訊息</a>
+        </li>
+        <li class="list-group-item nav-item">
+            <a class="nav-link" data-toggle="tab" href="#news-4" role="tab">獎學金訊息</a>
+        </li>
+        <li class="list-group-item nav-item">
+            <a class="nav-link" data-toggle="tab" href="#news-5" role="tab">其他訊息</a>
+        </li>
+
+    </ul>
+    <!-- /.Submenu -->
     <!-- /.News Submenu -->
+
+    <!-- Switch Content -->
+    <div class="tab-content">
+        <!-- A Content -->
+        <div class="tab-pane active" id="news-1" role="tabpanel">
+            學生
+        </div>
+        <!-- /.A Content -->
+        <div class="tab-pane" id="news-2" role="tabpanel">
+            2
+        </div>
+        <div class="tab-pane" id="news-3" role="tabpanel">
+            3
+        </div>
+        <div class="tab-pane" id="news-4" role="tabpanel">
+            4
+        </div>
+        <div class="tab-pane" id="news-5" role="tabpanel">
+            5
+        </div>
+    </div>
+    <!-- /.Switch Content -->
+
 
 </div>
 
 <div class="container">
 
     <!-- Introduce Submenu -->
-    <div class="list-subMenu">
-        <ul class="list-group-menu">
-            <li class="list-group-item list-group-item-dark">MENU</li>
-            <li class="list-group-item"><a href="#">系所歷史</a></li>
-            <li class="list-group-item"><a href="#">成員介紹</a></li>
-            <li class="list-group-item"><a href="#">榮譽獎項</a></li>
-            <li class="list-group-item"><a href="#">實驗室</a></li>
-            <li class="list-group-item"><a href="#">未來發展</a></li>
-            <li class="list-group-item"><a href="#">系所位置</a></li>
-        </ul>
-    </div>
+    <!-- Submenu -->
+    <ul class="list-group shadow">
+        <li class="list-group-item list-group-item-calm">{{ ::subPage Name:: }}</li>
+        <!-- A Link -->
+        <li class="list-group-item nav-item">
+            <a class="nav-link active" data-toggle="tab" href="#introduce-1" role="tab">系所歷史</a>
+        </li>
+        <!-- /.A Link -->
+        <li class="list-group-item nav-item">
+            <a class="nav-link" data-toggle="tab" href="#introduce-2" role="tab">成員介紹</a>
+        </li>
+        <li class="list-group-item nav-item">
+            <a class="nav-link" data-toggle="tab" href="#introduce-3" role="tab">榮譽獎項</a>
+        </li>
+        <li class="list-group-item nav-item">
+            <a class="nav-link" data-toggle="tab" href="#introduce-4" role="tab">實驗室</a>
+        </li>
+        <li class="list-group-item nav-item">
+            <a class="nav-link" data-toggle="tab" href="#introduce-5" role="tab">未來發展</a>
+        </li>
+        <li class="list-group-item nav-item">
+            <a class="nav-link" data-toggle="tab" href="#introduce-6" role="tab">系所位置</a>
+        </li>
+
+    </ul>
+    <!-- /.Submenu -->
     <!-- /.Introduce Submenu -->
 
+    <!-- Switch Content -->
+    <div class="tab-content">
+        <!-- A Content -->
+        <div class="tab-pane active" id="introduce-1" role="tabpanel">
+            學生
+        </div>
+        <!-- /.A Content -->
+        <div class="tab-pane" id="introduce-2" role="tabpanel">
+            2
+        </div>
+        <div class="tab-pane" id="introduce-3" role="tabpanel">
+            3
+        </div>
+        <div class="tab-pane" id="introduce-4" role="tabpanel">
+            4
+        </div>
+        <div class="tab-pane" id="introduce-5" role="tabpanel">
+            5
+        </div>
+        <div class="tab-pane" id="introduce-6" role="tabpanel">
+            6
+        </div>
+    </div>
+    <!-- /.Switch Content -->
 </div>
 
 <div class="container">
 
-    <!-- Labs Nav -->
-    <nav aria-label="breadcrumb">
-        <ol class="breadcrumb">
-            <li class="breadcrumb-item"><a href="#">軟體工程實驗室</a></li>
-            <li class="breadcrumb-item"><a href="#">計算機系統實驗室</a></li>
-            <li class="breadcrumb-item"><a href="#">網路與通訊實驗室</a></li>
-            <li class="breadcrumb-item"><a href="#">系上設備</a></li>
-        </ol>
-    </nav>
-    <!-- /.Labs Nav -->
+    <!-- Labs Nav-Pill -->
+    <!-- Link Name -->
+    <ul class="nav nav-pills mb-3" role="tablist">
+
+        <!-- First Link -->
+        <li class="nav-item">
+            <a class="nav-link active"  data-toggle="pill" href="#lab-1" aria-selected="true">軟體工程實驗室</a>
+        </li>
+        <!-- /.First Link -->
+        <!-- Second Link -->
+        <li class="nav-item">
+            <a class="nav-link" data-toggle="pill" href="#lab-2" aria-selected="false">計算機系統實驗室</a>
+        </li>
+        <!-- /.Second Link -->
+        <li class="nav-item">
+            <a class="nav-link" data-toggle="pill" href="#lab-3" aria-selected="false">網路與通訊實驗室</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" data-toggle="pill" href="#lab-4" aria-selected="false">系上設備</a>
+        </li>
+
+    </ul>
+    <!-- /.Link Name -->
+    <!-- /.Labs Nav-Pill -->
+
+    <!-- Switch Content -->
+    <div class="tab-content">
+        <div class="tab-pane fade show active" id="lab-1">
+1
+        </div>
+        <div class="tab-pane fade" id="lab-2">
+2
+        </div>
+        <div class="tab-pane fade" id="lab-3">
+3
+        </div>
+        <div class="tab-pane fade" id="lab-4">
+4
+        </div>
+    </div>
+    <!-- /.Switch Content -->
+
+
 
 </div>
 
@@ -237,41 +467,122 @@
             <li class="breadcrumb-item"><a href="#3">{{ changeMajor }}</a></li>
             <li class="breadcrumb-item"><a href="#4">{{ bachelorProject }}</a></li>
             <li class="breadcrumb-item"><a href="#5">{{ masterPaper }}</a></li>
-            <li class="breadcrumb-item"><a href="#6">離校手續</a></li>
         </ol>
     </nav>
     <!-- /.Download Link Nav -->
+
+
+
+    <!-- Download Link Nav-Pill -->
+
+    <!-- Link Name -->
+    <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+
+        <!-- First Link -->
+        <li class="nav-item">
+            <a class="nav-link active" id="label-bac" data-toggle="pill" href="#bac" aria-controls="bac" aria-selected="true">學士</a>
+        </li>
+        <!-- /.First Link -->
+        <!-- Second Link -->
+        <li class="nav-item">
+            <a class="nav-link" id="label-mas" data-toggle="pill" href="#mas" aria-controls="mas" aria-selected="false">碩士</a>
+        </li>
+        <!-- /.Second Link -->
+
+    </ul>
+    <!-- /.Link Name -->
+
+    <!-- Switch Content -->
+    <div class="tab-content">
+        <div class="tab-pane fade show active" id="bac" aria-labelledby="label-bac">he</div>
+        <div class="tab-pane fade" id="mas" aria-labelledby="label-mas">hi</div>
+    </div>
+    <!-- /.Switch Content -->
+
+    <!-- Download Link Nav-Pill -->
+
 
 </div>
 
 <div class="container">
 
     <!-- Enrollment Submenu -->
-    <div class="list-subMenu">
-        <ul class="list-group-menu">
-            <li class="list-group-item list-group-item-dark">MENU</li>
-            <li class="list-group-item"><a href="#bachelor">學士班</a></li>
-            <li class="list-group-item"><a href="#master">碩士班</a></li>
-            <li class="list-group-item"><a href="#ChinaStudents">中國學生</a></li>
-            <li class="list-group-item"><a href="#exchangeStudents">國際交換生</a></li>
-            <li class="list-group-item"><a href="#commonQuestion">常見問題</a></li>
-        </ul>
+    <!-- Submenu -->
+    <ul class="list-group shadow">
+        <li class="list-group-item list-group-item-calm">{{ ::subPage Name:: }}</li>
+        <!-- A Link -->
+        <li class="list-group-item nav-item">
+            <a class="nav-link active" data-toggle="tab" href="#enrollment-1" role="tab">學士班</a>
+        </li>
+        <!-- /.A Link -->
+        <li class="list-group-item nav-item">
+            <a class="nav-link" data-toggle="tab" href="#enrollment-2" role="tab">碩士班</a>
+        </li>
+        <li class="list-group-item nav-item">
+            <a class="nav-link" data-toggle="tab" href="#enrollment-3" role="tab">中國學生</a>
+        </li>
+        <li class="list-group-item nav-item">
+            <a class="nav-link" data-toggle="tab" href="#enrollment-4" role="tab">國際交換生</a>
+        </li>
+        <li class="list-group-item nav-item">
+            <a class="nav-link" data-toggle="tab" href="#enrollment-5" role="tab">常見問題</a>
+        </li>
+
+    </ul>
+    <!-- /.Submenu -->
+    <!-- /.Enrollment Submenu -->
+
+    <!-- Switch Content -->
+    <div class="tab-content">
+        <!-- A Content -->
+        <div class="tab-pane active" id="enrollment-1" role="tabpanel">學生</div>
+        <!-- /.A Content -->
+        <div class="tab-pane" id="enrollment-2" role="tabpanel">2</div>
+        <div class="tab-pane" id="enrollment-3" role="tabpanel">3</div>
+        <div class="tab-pane" id="enrollment-4" role="tabpanel">4</div>
+        <div class="tab-pane" id="enrollment-5" role="tabpanel">5</div>
     </div>
-    <!-- /.Enrollment Link Nav -->
+    <!-- /.Switch Content -->
+
+
 
 </div>
 
 <div class="container">
 
     <!-- Course Submenu -->
-    <div class="list-subMenu">
-        <ul class="list-group-menu">
-            <li class="list-group-item list-group-item-dark">MENU</li>
-            <li class="list-group-item"><a href="#">學士班</a></li>
-            <li class="list-group-item"><a href="#">碩士班</a></li>
-        </ul>
+    <!-- Submenu -->
+    <ul class="list-group shadow">
+        <li class="list-group-item list-group-item-calm">{{ ::subPage Name:: }}</li>
+        <!-- A Link -->
+        <li class="list-group-item nav-item">
+            <a class="nav-link active" data-toggle="tab" href="#course-1" role="tab">學士班</a>
+        </li>
+        <!-- /.A Link -->
+        <!-- A Link -->
+        <li class="list-group-item nav-item">
+            <a class="nav-link" data-toggle="tab" href="#course-2" role="tab">碩士班</a>
+        </li>
+        <!-- A Link -->
+    </ul>
+    <!-- /.Submenu -->
+    <!-- /.Course Submenu -->
+
+    <!-- Switch Content -->
+    <div class="tab-content">
+        <!-- A Content -->
+        <div class="tab-pane active" id="course-1" role="tabpanel">
+            學生
+        </div>
+        <!-- /.A Content -->
+        <!-- A Content -->
+        <div class="tab-pane" id="course-2" role="tabpanel">
+            教師
+        </div>
+        <!-- /.A Content -->
     </div>
-    <!-- Course Submenu -->
+    <!-- /.Switch Content -->
+
 
 </div>
 
@@ -287,6 +598,9 @@
             <li class="breadcrumb-item"><a href="#">課程內容概述</a></li>
         </ol>
     </nav>
+
+
+
     <!-- /.Course Link Nav -->
 
 </div>
@@ -294,19 +608,50 @@
 <div class="container">
 
     <!-- Student Business Submenu -->
-    <div class="list-subMenu">
-        <ul class="list-group-menu">
-            <li class="list-group-item list-group-item-dark">MENU</li>
-            <li class="list-group-item"><a href="#">學生論文</a></li>
-            <li class="list-group-item"><a href="#">系學會</a></li>
-            <li class="list-group-item"><a href="#">獎助學金</a></li>
-            <li class="list-group-item"><a href="#">證照成果</a></li>
-            <li class="list-group-item"><a href="#">系友專區</a></li>
-        </ul>
-    </div>
+
+    <!-- Submenu -->
+    <ul class="list-group shadow">
+        <li class="list-group-item list-group-item-calm">{{ ::subPage Name:: }}</li>
+        <!-- A Link -->
+        <li class="list-group-item nav-item">
+            <a class="nav-link active" data-toggle="tab" href="#student-1" role="tab">學生論文</a>
+        </li>
+        <!-- /.A Link -->
+        <li class="list-group-item nav-item">
+            <a class="nav-link" data-toggle="tab" href="#student-2" role="tab">系學會</a>
+        </li>
+        <li class="list-group-item nav-item">
+            <a class="nav-link" data-toggle="tab" href="#student-3" role="tab">獎助學金</a>
+        </li>
+        <li class="list-group-item nav-item">
+            <a class="nav-link" data-toggle="tab" href="#student-4" role="tab">證照成果</a>
+        </li>
+        <li class="list-group-item nav-item">
+            <a class="nav-link" data-toggle="tab" href="#student-5" role="tab">系友專區</a>
+        </li>
+
+    </ul>
+    <!-- /.Submenu -->
     <!-- Student Business Submenu -->
 
+    <!-- Switch Content -->
+    <div class="tab-content">
+        <!-- A Content -->
+        <div class="tab-pane active" id="student-1" role="tabpanel">學生</div>
+        <!-- /.A Content -->
+        <div class="tab-pane" id="student-2" role="tabpanel">2</div>
+        <div class="tab-pane" id="student-3" role="tabpanel">3</div>
+        <div class="tab-pane" id="student-4" role="tabpanel">4</div>
+        <div class="tab-pane" id="student-5" role="tabpanel">5</div>
+    </div>
+    <!-- /.Switch Content -->
+
+
+
 </div>
+
+
+
 
 
 </body>
