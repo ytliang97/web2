@@ -6,4 +6,4 @@ navbar.html裡有：
 
 
 article.html裡有：
-+ 單一頁面 for 詳細消息內容
++ 公告內文頁面 < !-- Article --> 至 < !-- /.Article -->
