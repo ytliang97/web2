@@ -37,7 +37,7 @@
             <!-- Course Submenu -->
 
         </div>
-        <div class="col-9" id="forVue2">
+        <div class="col-9">
 
             <!-- Page Title -->
             <h5>課程資訊</h5>
@@ -72,13 +72,25 @@
                             <li>
                                 <h5 id="course-content-1">選課注意事項</h5>
                                 <ul>
-                                    <todo-item2 v-for="item in precautionList" v-bind:todo="item" v-bine:key="item.id"></todo-item2>
+                                    <li><a href="#">職涯進路地圖</a></li>
+                                    <li><a href="#">選課前須知-重要</a></li>
+                                    <li><a href="#">選課FAQ</a></li>
                                 </ul>
                             </li>
                             <li>
                                 <h5 id="course-content-2">課程架構(以入學年度為準)</h5>
                                 <ul>
-                                    <todo-item v-for="item in bYearList" v-bind:todo="item" v-bine:key="item.id"></todo-item>
+                                    <a href="#" style="margin-right: 5px">96</a>
+                                    <a href="#" style="margin-right: 5px">97</a>
+                                    <a href="#" style="margin-right: 5px">98</a>
+                                    <a href="#" style="margin-right: 5px">99</a>
+                                    <a href="#" style="margin-right: 5px">100</a>
+                                    <a href="#" style="margin-right: 5px">101</a>
+                                    <a href="#" style="margin-right: 5px">102</a>
+                                    <a href="#" style="margin-right: 5px">103</a>
+                                    <a href="#" style="margin-right: 5px">104</a>
+                                    <a href="#" style="margin-right: 5px">105</a>
+                                    <a href="#" style="margin-right: 5px">106</a>
                                 </ul>
                             </li>
                             <li>
@@ -597,7 +609,21 @@
                             <li>
                                 課程架構(以入學年度為準)
                                 <ul>
-                                    <todo-item v-for="item in mYearList" v-bind:todo="item" v-bine:key="item.id"></todo-item>
+                                    <a href="#" style="margin-right: 5px">93</a>
+                                    <a href="#" style="margin-right: 5px">94</a>
+                                    <a href="#" style="margin-right: 5px">95</a>
+                                    <a href="#" style="margin-right: 5px">96</a>
+                                    <a href="#" style="margin-right: 5px">97</a>
+                                    <a href="#" style="margin-right: 5px">98</a>
+                                    <a href="#" style="margin-right: 5px">99</a>
+                                    <a href="#" style="margin-right: 5px">100</a>
+                                    <a href="#" style="margin-right: 5px">101</a>
+                                    <a href="#" style="margin-right: 5px">102</a>
+                                    <a href="#" style="margin-right: 5px">103</a>
+                                    <a href="#" style="margin-right: 5px">104</a>
+                                    <a href="#" style="margin-right: 5px">105</a>
+                                    <a href="#" style="margin-right: 5px">106</a>
+
                                 </ul>
                             </li>
                             <li>
@@ -681,58 +707,6 @@
             <!-- /.Switch Content -->
 
 
-
-
-            <script>
-                Vue.component('todo-item', {
-                    props: ['todo'],
-                    template: '<a href="#" style="margin-right: 5px">{{ todo.number }}</a>'
-                })
-                Vue.component('todo-item2', {
-                    props: ['todo'],
-                    template: '<li><a href="#">{{ todo.precaution }}</a></li>'
-                })
-                new Vue({
-                    el: '#forVue2',
-                    data: {
-                        mYearList: [
-                            { id: 0, number: '96'},
-                            { id: 0, number: '97'},
-                            { id: 0, number: '98'},
-                            { id: 0, number: '99'},
-                            { id: 0, number: '100'},
-                            { id: 0, number: '101'},
-                            { id: 0, number: '102'},
-                            { id: 0, number: '103'},
-                            { id: 0, number: '104'},
-                            { id: 0, number: '105'},
-                            { id: 0, number: '106'}
-                        ],
-                        bYearList: [
-                            { id: 0, number: '93'},
-                            { id: 0, number: '94'},
-                            { id: 0, number: '95'},
-                            { id: 0, number: '96'},
-                            { id: 0, number: '97'},
-                            { id: 0, number: '98'},
-                            { id: 0, number: '99'},
-                            { id: 0, number: '100'},
-                            { id: 0, number: '101'},
-                            { id: 0, number: '102'},
-                            { id: 0, number: '103'},
-                            { id: 0, number: '104'},
-                            { id: 0, number: '105'},
-                            { id: 0, number: '106'}
-                        ],
-                        precautionList: [
-                            { id: 0, precaution: '職涯進路地圖'},
-                            { id: 0, precaution: '選課前須知-重要'},
-                            { id: 0, precaution: '選課FAQ'}
-                        ]
-                    }
-
-                })
-            </script>
             <!-- /.Article -->
 
         </div>
