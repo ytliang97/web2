@@ -189,3 +189,12 @@
   color: $carousel-caption-color;
   text-align: center;
 }
+
+
+//--- custom
+
+.carousel-limit {
+  > img {
+    height: 300px;
+  }
+}

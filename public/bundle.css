@@ -4553,6 +4553,9 @@ button.close {
   color: #fff;
   text-align: center; }
 
+.carousel-limit > img {
+  height: 300px; }
+
 .align-baseline {
   vertical-align: baseline !important; }
 
